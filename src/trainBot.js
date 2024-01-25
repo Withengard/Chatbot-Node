@@ -7,7 +7,8 @@ async function trainBot(req, res) {
     try {
       const trainingText = fs.readFileSync("training-data.txt", "utf8");
       const textSplitter = new RecursiveCharacterTextSplitter({
-        chunkSize: 1000,
+        chunkSize: 100,
+        chunkOverlap: 10,
       });
       const docs = await textSplitter.createDocuments([trainingText]);
   

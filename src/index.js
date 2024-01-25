@@ -20,4 +20,4 @@ app.listen(port, () => {
 });
 
 
-//curl -X POST -H "Content-Type: application/json" -d "{\"question\": \"was ist wissenschaft\"}" http://localhost:3000/get-answer
+//curl -X POST -H "Content-Type: application/json" -d "{\"question\": \"What is he doing since march 2022\"}" http://localhost:3000/get-answer
